@@ -1,0 +1,72 @@
+# ===== Control de versiones =====
+.git
+.gitignore
+
+# ===== Herramientas de Docker =====
+docker-compose.yml
+docker-compose.*.yml
+*.env
+.env.*
+.env.local
+
+# ===== Archivos del sistema/IDE =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# ===== Python basura =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.cache/
+.pytest_cache/
+.tox/
+
+# ===== Logs =====
+*.log
+logs/
+log/
+
+# ===== Archivos de base de datos locales =====
+*.sqlite3
+*.db
+
+# ===== Archivos generados por Django =====
+staticfiles/
+media/
+uploads/
+tmp/
+
+# ===== Cobertura, reportes, docs =====
+htmlcov/
+coverage/
+coverage.xml
+reports/
+docs/_build/
+
+# ===== Seguridad local =====
+secrets/
+credentials/
+*.crt
+*.key
+*.pem
+
+# ===== No ignorar (importante) =====
+# Deja estos fuera del ignore para que la imagen se pueda construir correctamente
+# manage.py
+# requirements.txt
+# pyproject.toml
+# setup.py
+# tus apps Django
+# migrations (sí deben ir, no las ignores)
+
